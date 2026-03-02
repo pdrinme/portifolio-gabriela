@@ -24,7 +24,7 @@ function App() {
         </div>
         <div class="border-2 border-gray-200 shadow-2xl rounded-4xl p-4">
           <h2 class="text-2xl text-center">Minhas Formações:</h2>
-          <div class="grid gap-3 lg:grid-cols-3 sm:grid-cols-1">
+          <div class="grid gap-3 lg:grid-cols-3 sm:grid-cols-1 items-center">
             {
               formation.map(( formacao, p ) => 
                   <div class="border-2 border-gray-100 rounded-xl p-4">
@@ -32,9 +32,31 @@ function App() {
                     <h3>Formação: {formacao.name}</h3>
                     <p>Data: {formacao.date}</p>
                   </div>
-                
               )
             }
+          </div>
+        </div>
+      </section>
+      <section class="grid p-5 gap-6">
+        <div class="border-2 border-gray-200 shadow-2xl rounded-4xl p-4 text-center">
+          <h2 class="text-2xl">Meu Trabalho</h2>
+          <p>Atualmente trabalho no Poliedro Educação</p>
+          <div class="grid grid-cols-3 gap-5 p-6">
+            <div class="border-3 shadow-2xl border-gray-100 rounded-2xl p-6">
+              <p class="border-2 p-36 rounded-2xl">imagem aqui</p>
+              <h1>incrivel</h1>
+              <p>maravilhoso</p>
+            </div>
+            <div class="border-3 shadow-2xl border-gray-100 rounded-2xl p-6">
+              <p class="border-2 p-36 rounded-2xl">imagem aqui</p>
+              <h1>incrivel</h1>
+              <p>maravilhoso</p>
+            </div>
+            <div class="border-3 shadow-2xl border-gray-100 rounded-2xl p-6">
+              <p class="border-2 p-36 rounded-2xl">imagem aqui</p>
+              <h1>incrivel</h1>
+              <p>maravilhoso</p>
+            </div>
           </div>
         </div>
       </section>
