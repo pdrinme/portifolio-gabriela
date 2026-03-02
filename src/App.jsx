@@ -38,25 +38,27 @@ function App() {
           </div>
         </div>
       </section>
-      <section class="grid p-5 gap-6">
-        <div class="border-2 border-gray-200 shadow-2xl rounded-4xl p-4 text-center dark:border-[#363b3d]">
-          <h2 class="text-2xl">Meu Trabalho</h2>
-          <p>Atualmente trabalho no Poliedro Educação</p>
-          <div class="grid grid-cols-3 gap-5 p-6">
-            <div class="border-3 shadow-2xl border-gray-100 rounded-2xl p-6 dark:border-[#363b3d]">
-              <p class="border-2 p-36 rounded-2xl">imagem aqui</p>
-              <h1>incrivel</h1>
-              <p>maravilhoso</p>
-            </div>
-            <div class="border-3 shadow-2xl border-gray-100 rounded-2xl p-6 dark:border-[#363b3d]">
-              <p class="border-2 p-36 rounded-2xl">imagem aqui</p>
-              <h1>incrivel</h1>
-              <p>maravilhoso</p>
-            </div>
-            <div class="border-3 shadow-2xl border-gray-100 rounded-2xl p-6 dark:border-[#363b3d]">
-              <p class="border-2 p-36 rounded-2xl">imagem aqui</p>
-              <h1>incrivel</h1>
-              <p>maravilhoso</p>
+      <section>
+        <div class="grid p-5 gap-6">
+          <div class="border-2 border-gray-200 shadow-2xl rounded-4xl p-4 text-center dark:border-[#363b3d]">
+            <h2 class="text-2xl">Meu Trabalho</h2>
+            <p>Atualmente trabalho no Poliedro Educação</p>
+            <div class="grid gap-5 p-6 lg:grid-cols-3 sm:grid-cols-1">
+              <div class="border-3 shadow-2xl border-gray-100 rounded-2xl p-6 dark:border-[#363b3d]">
+                <p class="border-2 rounded-2xl">imagem aqui</p>
+                <h1>incrivel</h1>
+                <p>maravilhoso</p>
+              </div>
+              <div class="border-3 shadow-2xl border-gray-100 rounded-2xl p-6 dark:border-[#363b3d]">
+                <p class="border-2 rounded-2xl">imagem aqui</p>
+                <h1>incrivel</h1>
+                <p>maravilhoso</p>
+              </div>
+              <div class="border-3 shadow-2xl border-gray-100 rounded-2xl p-6 dark:border-[#363b3d]">
+                <p class="border-2 rounded-2xl">imagem aqui</p>
+                <h1>incrivel</h1>
+                <p>maravilhoso</p>
+              </div>
             </div>
           </div>
         </div>
