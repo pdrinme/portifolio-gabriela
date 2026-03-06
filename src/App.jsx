@@ -42,7 +42,7 @@ function App() {
           <div class="grid gap-3 lg:grid-cols-3 sm:grid-cols-1 items-center">
             {
               formation.map(( formacao, p ) => 
-                  <div class="border-2 border-gray-100 rounded-xl p-4 transition dark:border-[#363b3d] hover:scale-110">
+                  <div class="border-2 border-gray-100 rounded-xl shadow-2xl p-4 transition dark:border-[#363b3d] dark:shadow-white/15 hover:scale-110">
                     <p>🏅</p>
                     <h3>Formação: {formacao.name}</h3>
                     <p>Data: {formacao.date}</p>
@@ -77,7 +77,7 @@ function App() {
           </div>
         </div>
       </section>
-      <section >
+      <section class="pb-20">
             <div class="grid p-5 gap-6">
               <div class="grid gap-10 text-center justify-center">
                 <h2 class="text-2xl">Contato</h2>
@@ -90,6 +90,7 @@ function App() {
                   </a>
                 </div>
               </div>
+              <p class="text-xl text-center pt-14">Entre em Contato por esses links! :)</p>
             </div>
       </section>
     </div>
