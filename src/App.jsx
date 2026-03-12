@@ -9,8 +9,15 @@ function App() {
   return (
     <>
     <div class="dark:bg-[#181a1b] dark:text-white font-roboto ">
-      <section class="p-14">
-        <header class="flex justify-center items-center border-2 border-gray-200 shadow-2xl rounded-4xl dark:border-[#363b3d] dark:shadow-white/15 lg:p-8">
+      <section class="p-14 relative min-h-screen flex items-center justify-center bg-linear-to-tl from-rose-200 via-white to-rose-800 overflow-hidden">
+
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute top-20 right-20 w-72 h-72 bg-rose-500 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-blob"></div>
+        <div className="absolute top-40 left-20 w-72 h-72 bg-rose-800 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-blob animation-delay-2000"></div>
+        <div className="absolute -bottom-8 left-40 w-72 h-72 bg-rose-400 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-blob animation-delay-4000"></div>
+      </div>
+
+        <header class="flex justify-center items-center border-2 border-gray-200 shadow-2xl bg-white rounded-4xl dark:border-[#363b3d] dark:shadow-white/15 lg:p-8 dark:bg-[#181a1b]">
           <div class="grid p-8 gap-6">
             <div class="flex justify-center">
               <div class="bg-linear-to-r/longer from-indigo-500 to-teal-400 p-1 rounded-[90rem] shadow-2xl transition hover:scale-110 dark:shadow-white/15">
@@ -19,20 +26,10 @@ function App() {
             </div>
             <h1 class="text-center text-4xl">Gabriela Emerick</h1>
             <p class="text-center text-xl">Idade: <span class="text-amber-300">19 anos</span></p>
-            <div class="flex flex-wrap gap-3 justify-center">
-              {
-                capacity.map((capacidades) =>
-                  <div class="flex p-2 gap-2 border-2 rounded-xl items-center shadow-2xl border-gray-200 bg-gray-100 transition dark:border-[#363b3d] dark:bg-[#181a1b] dark:shadow-white/5 hover:bg-amber-500 hover:shadow-amber-300 hover:scale-110 hover:border-amber-500">
-                    <img src={capacidades.img} class="max-w-10"/>
-                    <p>{capacidades.name}</p>
-                  </div>
-                )
-              }
-            </div>
           </div>
         </header>
       </section>
-      <section class="grid p-10 gap-6 lg:grid-cols-2 sm:grid-cols-1">
+      <section class="grid p-10 gap-6 lg:grid-cols-2 sm:grid-cols-1 will-change-scroll-[animation-bounce]">
         <div class="border-2 border-gray-200 shadow-2xl rounded-4xl p-7 dark:border-[#363b3d] dark:shadow-white/15">
           <h2 class="text-2xl text-center">Sobre mim:</h2>
           <p>Olá, <br/> <br/>Sou Jovem Aprendiz em Comunicação Institucional no Poliedro Educação, onde desenvolvo habilidades analíticas e criativas com o objetivo de fortalecer a comunicação e o engajamento interno.<br/> <br/>Minha atuação é pautada pelo suporte ao setor, com ênfase em: <br/> <br/>- Elaboração de planilhas, documentos e suporte a demandas do setor. <br/>- Monitoramento de redes sociais e gestão focada na saúde da marca. <br/>- Elaboração de textos e copywriting alinhados ao tom de voz da marca.<br/> <br/>Sou entusiasta das áreas de Comunicação, Marketing e Publicidade, e busco expandir meus conhecimentos e colaborar com iniciativas estratégicas e criativas, com foco em resultados e impactos reais.<br/> <br/>Se você também é um entusiasta dessas áreas, entre em contato comigo e vamos conversar sobre esse mercado ;)</p>
@@ -52,6 +49,16 @@ function App() {
           </div>
         </div>
       </section>
+                  <div class="flex flex-wrap gap-3 justify-center">
+              {
+                capacity.map((capacidades) =>
+                  <div class="flex p-2 gap-2 border-2 rounded-xl items-center shadow-2xl border-gray-200 bg-gray-100 transition dark:border-[#363b3d] dark:bg-[#181a1b] dark:shadow-white/5 hover:bg-amber-500 hover:shadow-amber-300 hover:scale-110 hover:border-amber-500">
+                    <img src={capacidades.img} class="max-w-10"/>
+                    <p>{capacidades.name}</p>
+                  </div>
+                )
+              }
+            </div> 
       <section>
         <div class="grid p-5 gap-6">
           <div class="border-2 border-gray-200 shadow-2xl rounded-4xl p-4 text-center dark:border-[#363b3d] dark:shadow-white/15">
